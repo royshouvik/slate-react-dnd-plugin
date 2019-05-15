@@ -1,92 +1,92 @@
 {
-  "name": "slate-react-dnd-plugin",
-  "version": "1.0.21",
-  "description": "A plugin to integrate react-dnd into the slate.js ecosphere.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "transform": {
-      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
-      "^.+\\.js$": "babel-jest"
+    "name": "slate-react-dnd-plugin",
+    "version": "1.0.21",
+    "description": "A plugin to integrate react-dnd into the slate.js ecosphere.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "jest": {
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ],
+        "transform": {
+            "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+            "^.+\\.js$": "babel-jest"
+        },
+        "testRegex": "/tests/.*\\.(ts|tsx|js)$",
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "/example"
+        ]
     },
-    "testRegex": "/tests/.*\\.(ts|tsx|js)$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/example"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/tslint ./lib/*.{ts,tsx} && ./node_modules/.bin/eslint ./tests/*.js && jest",
-    "build": "node_modules/.bin/tsc",
-    "watch": "node_modules/.bin/tsc --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jensneuse/slate-react-dnd-plugin.git"
-  },
-  "keywords": [
-    "slate",
-    "slate-react",
-    "react-dnd",
-    "react",
-    "drag",
-    "drop",
-    "drag&drop",
-    "dnd",
-    "typescript",
-    "ts"
-  ],
-  "author": "Jens Neuse",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jensneuse/slate-react-dnd-plugin/issues"
-  },
-  "homepage": "https://github.com/jensneuse/slate-react-dnd-plugin#readme",
-  "dependencies": {
-    "@types/react": "^16.0.34",
-    "@types/react-dnd": "^2.0.34",
-    "@types/react-dnd-html5-backend": "^2.1.8",
-    "@types/react-dom": "^16.0.3",
-    "@types/recompose": "^0.24.4",
-    "immutable": "^3.8.2",
-    "react": "^16.2.0",
-    "react-dnd": "^2.5.4",
-    "react-dnd-html5-backend": "^2.5.4",
-    "react-dom": "^16.2.0",
-    "recompose": "^0.26.0",
-    "slate": "^0.32.1",
-    "slate-react": "^0.11.1"
-  },
-  "devDependencies": {
-    "@superevilmegaco/superevil-tslint-config-airbnb": "^1.0.5",
-    "@types/prop-types": "^15.5.2",
-    "babel-jest": "^22.2.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "create-react-app": "^1.5.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.18.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "jest": "^22.3.0",
-    "prop-types": "^15.6.0",
-    "react-test-renderer": "^16.2.0",
-    "ts-jest": "^22.0.4",
-    "tslint": "^5.9.1",
-    "typescript": "^2.6.2"
-  }
+    "babel": {
+        "presets": [
+            "env",
+            "react"
+        ]
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/tslint ./lib/*.{ts,tsx} && ./node_modules/.bin/eslint ./tests/*.js && jest",
+        "build": "node_modules/.bin/tsc",
+        "watch": "node_modules/.bin/tsc --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jensneuse/slate-react-dnd-plugin.git"
+    },
+    "keywords": [
+        "slate",
+        "slate-react",
+        "react-dnd",
+        "react",
+        "drag",
+        "drop",
+        "drag&drop",
+        "dnd",
+        "typescript",
+        "ts"
+    ],
+    "author": "Jens Neuse",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jensneuse/slate-react-dnd-plugin/issues"
+    },
+    "homepage": "https://github.com/jensneuse/slate-react-dnd-plugin#readme",
+    "dependencies": {
+        "@types/react": "^16.0.34",
+        "@types/react-dnd": "3.0.2",
+        "@types/react-dnd-html5-backend": "3.0.2",
+        "@types/react-dom": "^16.0.3",
+        "@types/recompose": "0.30.6",
+        "immutable": "^3.8.2",
+        "react": "16.8.6",
+        "react-dnd": "7.4.4",
+        "react-dnd-html5-backend": "7.4.4",
+        "react-dom": "16.8.6",
+        "recompose": "0.30.0",
+        "slate": "0.44.9",
+        "slate-react": "0.21.15"
+    },
+    "devDependencies": {
+        "@superevilmegaco/superevil-tslint-config-airbnb": "^1.0.5",
+        "@types/prop-types": "^15.5.2",
+        "babel-jest": "^22.2.2",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "create-react-app": "^1.5.0",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "eslint": "^4.18.1",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-jsx-a11y": "^6.0.3",
+        "eslint-plugin-react": "^7.7.0",
+        "jest": "^22.3.0",
+        "prop-types": "^15.6.0",
+        "react-test-renderer": "^16.2.0",
+        "ts-jest": "^22.0.4",
+        "tslint": "^5.9.1",
+        "typescript": "^2.6.2"
+    }
 }
